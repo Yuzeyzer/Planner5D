@@ -81,6 +81,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -187,9 +188,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -197,9 +198,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -208,9 +209,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -260,8 +261,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -271,8 +272,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -280,7 +281,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -290,7 +291,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -338,16 +339,20 @@ template {
 }
 
 @font-face {
-  font-family: "Font Awesome 5 Brands";
+  font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: 400;
   font-display: block;
   src: url(../fonts/fa-brands-400.eot);
-  src: url(../fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url("../resources/fonts/fa-regular-400.woff2") format("woff2"), url(../fonts/fa-brands-400.woff) format("woff"), url(../fonts/fa-brands-400.ttf) format("truetype"), url(../fonts/fa-brands-400.svg#fontawesome) format("svg");
+  src: url(../fonts/fa-brands-400.eot?#iefix) format('embedded-opentype'),
+    url('../resources/fonts/fa-regular-400.woff2') format('woff2'),
+    url(../fonts/fa-brands-400.woff) format('woff'),
+    url(../fonts/fa-brands-400.ttf) format('truetype'),
+    url(../fonts/fa-brands-400.svg#fontawesome) format('svg');
 }
 
 .fab {
-  font-family: "Font Awesome 5 Brands";
+  font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
 }
 
@@ -356,17 +361,21 @@ template {
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
   font-display: block;
   src: url(../fonts/fa-solid-900.eot);
-  src: url(../fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url("../resources/fonts/fa-solid-900.woff2") format("woff2"), url(../fonts/fa-solid-900.woff) format("woff"), url(../fonts/fa-solid-900.ttf) format("truetype"), url(../fonts/fa-solid-900.svg#fontawesome) format("svg");
+  src: url(../fonts/fa-solid-900.eot?#iefix) format('embedded-opentype'),
+    url('../resources/fonts/fa-solid-900.woff2') format('woff2'),
+    url(../fonts/fa-solid-900.woff) format('woff'),
+    url(../fonts/fa-solid-900.ttf) format('truetype'),
+    url(../fonts/fa-solid-900.svg#fontawesome) format('svg');
 }
 
 .fa,
 .fas {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
 
@@ -375,16 +384,20 @@ template {
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 400;
   font-display: block;
   src: url(../fonts/fa-regular-400.eot);
-  src: url(../fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url("../resources/fonts/fa-regular-400.woff2") format("woff2"), url(../fonts/fa-regular-400.woff) format("woff"), url(../fonts/fa-regular-400.ttf) format("truetype"), url(../fonts/fa-regular-400.svg#fontawesome) format("svg");
+  src: url(../fonts/fa-regular-400.eot?#iefix) format('embedded-opentype'),
+    url('../resources/fonts/fa-regular-400.woff2') format('woff2'),
+    url(../fonts/fa-regular-400.woff) format('woff'),
+    url(../fonts/fa-regular-400.ttf) format('truetype'),
+    url(../fonts/fa-regular-400.svg#fontawesome) format('svg');
 }
 
 .far {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 400;
 }
 
@@ -449,15 +462,20 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
+  -webkit-text-decoration-skip: objects;
   text-decoration-skip: objects;
   text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 button:not([disabled]),
-a[role="button"]:not([disabled]) {
+a[role='button']:not([disabled]) {
   cursor: pointer;
 }
 
@@ -482,7 +500,7 @@ a[role="button"]:not([disabled]) {
 }
 
 .clearfix::after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -562,7 +580,7 @@ a[role="button"]:not([disabled]) {
 }
 
 .header .nav__link::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -619,7 +637,8 @@ a[role="button"]:not([disabled]) {
   }
 }
 
-.header .badges__list, .header .badges__item {
+.header .badges__list,
+.header .badges__item {
   display: flex;
   align-items: center;
 }
@@ -651,7 +670,7 @@ a[role="button"]:not([disabled]) {
     border: 1px solid currentColor;
     border-right: 0;
     border-top: 0;
-    content: " ";
+    content: ' ';
     display: block;
     height: 0.55556vw;
     pointer-events: none;
