@@ -1,0 +1,24 @@
+.logo {
+	margin-right: vw(24);
+	&__link {
+		color: $color-darkGray;
+		svg {
+			display: block;
+			width: vw(120);
+			height: vw(32);
+			fill: $color-green;
+		}
+	}
+}
+
+@include mobile {
+	.logo {
+		margin-right: vmin(24);
+		&__link {
+			svg {
+				width: vmin(120);
+				height: vmin(32);
+			}
+		}
+	}
+}

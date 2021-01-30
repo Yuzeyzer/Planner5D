@@ -1,0 +1,53 @@
+.burger {
+	cursor: pointer;
+	display: none;
+	height: vmin(60);
+	width: vmin(60);
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 33;
+	span {
+		background-color: currentColor;
+		display: block;
+		height: 1px;
+		left: calc(50% - 8px);
+		position: absolute;
+		transform-origin: center;
+		transition-duration: 86ms;
+		transition-property: background-color, opacity, transform;
+		transition-timing-function: ease-out;
+		width: vmin(16);
+		&:nth-child(1) {
+			top: vmin(25);
+		}
+		&:nth-child(2) {
+			top: vmin(30);
+		}
+		&:nth-child(3) {
+			top: vmin(35);
+		}
+	}
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+}
+
+@include mobile {
+	.burger {
+		display: block;
+		&--active {
+			span {
+				&:nth-child(1) {
+					transform: translateY(vmin(5)) rotate(45deg);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+				}
+				&:nth-child(3) {
+					transform: translateY(vmin(-5)) rotate(-45deg);
+				}
+			}
+		}
+	}
+}

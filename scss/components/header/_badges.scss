@@ -1,0 +1,81 @@
+.badges {
+	&__list,
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		padding: 0 vw(20);
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	&__notification {
+		i {
+			transition: 0.3s;
+		}
+		&:hover {
+			i {
+				color: $header-link-text-color-active;
+			}
+		}
+	}
+	&__dropdown {
+		position: relative;
+		align-self: stretch;
+		display: inline-flex;
+		align-items: center;
+		padding: vw(14) vw(40) vw(14) vw(16);
+		@include desktop {
+			&::before {
+				border: 1px solid currentColor;
+				border-right: 0;
+				border-top: 0;
+				content: " ";
+				display: block;
+				height: vw(8);
+				pointer-events: none;
+				position: absolute;
+				transform: rotate(-45deg);
+				transform-origin: center;
+				width: 0.5em;
+				margin-top: -0.375em;
+				right: 1.125em;
+				top: 50%;
+			}
+		}
+		&:hover {
+			background-color: $header-link-bg-color-hover;
+		}
+	}
+	&__avatar {
+		margin-right: vw(8);
+		height: vw(32);
+		width: vw(32);
+		border-radius: 50%;
+	}
+}
+
+@include mobile {
+	.badges {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		padding-left: vmin(10);
+		&__list {
+			height: vmin(60);
+		}
+		&__item {
+			padding: 0 vmin(15);
+		}
+		&__avatar {
+			margin-right: vmin(4);
+			height: vmin(26);
+			width: vmin(26);
+		}
+		&--active {
+			display: block;
+		}
+	}
+}

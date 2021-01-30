@@ -1,0 +1,40 @@
+.hero {
+	&__content {
+		display: flex;
+		flex-direction: column;
+		padding-top: vw(100);
+		color: $color-darkGray;
+		font-weight: 600;
+	}
+	&__title {
+		text-transform: uppercase;
+	}
+	&__description {
+		font-size: vw(16);
+		line-height: 1.5;
+	}
+	&__date {
+		display: block;
+		margin: 0 0 0 auto;
+	}
+}
+
+@include mobile {
+	.hero {
+		&__content {
+			padding-top: vmin(80);
+		}
+		&__title {
+			font-size: vmin(32);
+			font-weight: 300;
+			margin-bottom: vmin(10);
+		}
+		&__date {
+			font-size: vmin(12);
+			font-weight: 400;
+		}
+		&__description {
+			font-size: vmin(14);
+		}
+	}
+}

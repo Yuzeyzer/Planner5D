@@ -1,0 +1,54 @@
+.header {
+	// variables start
+	$header-text-color: #363636;
+	$header-bg-color: #f5f7f8;
+	$header-border-color: #dee5e8;
+	$header-container-border-color: transparent;
+	$header-logo-text-color: #363636;
+	$header-logo-fill: #20bd57;
+	$header-logo-text-color-hover: #20bd57;
+	$header-logo-fill-hover: #20bd57;
+	$header-link-text-color: #363636;
+	$header-link-bg-color: transparent;
+	$header-link-text-color-hover: #363636;
+	$header-link-bg-color-hover: #e6ebee;
+	$header-link-text-color-active: #20bd57;
+	$header-link-bg-color-active: #e6ebee;
+	$header-link-border-color-active: #20bd57;
+	$header-badge-text-color: #ffffff;
+	$header-badge-bg-color: #20bd57;
+	// variables end
+
+	// imports to header start
+	@import "./logo";
+	@import "./nav";
+	@import "./badges";
+	@import "./burger"; 
+	// imports to header end
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 30;
+	color: $header-text-color;
+	background-color: $header-bg-color;
+	border-bottom: 1px solid $header-border-color;
+	transition-property: transform, background-color, color, border-color;
+	transition-timing-function: cubic-bezier(0, 0.4, 0.2, 1);
+	transition-duration: 0.2s;
+
+	&__row {
+		height: vw(60);
+		display: flex;
+		align-items: center;
+	}
+}
+
+@include mobile {
+	.header {
+		&__row {
+			height: vmin(60);
+		}
+	}
+}
